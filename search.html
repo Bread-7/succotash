@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <meta property="og:title" content="Search" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Source Sans Pro;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./search.css" rel="stylesheet" />
+
+      <div class="search-container">
+        <section class="search-speakers">
+          <header data-thq="thq-navbar" class="search-navbar">
+            <h2 id="search_heading" class="search-text">Search</h2>
+            <div
+              data-thq="thq-navbar-nav"
+              data-role="Nav"
+              class="search-desktop-menu"
+            >
+              <nav
+                data-thq="thq-navbar-nav-links"
+                data-role="Nav"
+                class="search-nav"
+              >
+                <a href="index.html" class="search-link navLink">Home</a>
+                <a href="search.html" class="search-link1 navLink">Search</a>
+                <a href="profile.html" class="search-link2 navLink">Profile</a>
+              </nav>
+            </div>
+            <div data-thq="thq-burger-menu" class="search-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="search-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="search-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="search-nav1"
+              >
+                <div class="search-container1">
+                  <h2 class="search-text1">
+                    <span class="search-text2">Who Likes You?</span>
+                    <br />
+                  </h2>
+                  <div data-thq="thq-close-menu" class="search-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="search-icon2">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="search-nav2"
+                >
+                  <a href="index.html" class="search-navlink navLink">Home</a>
+                  <a href="search.html" class="search-navlink1 navLink">
+                    Search
+                  </a>
+                  <a href="profile.html" class="search-navlink2 navLink">
+                    Profile
+                  </a>
+                </nav>
+                <div class="search-button-container">
+                  <a href="register.html" class="search-register button">
+                    Register
+                  </a>
+                </div>
+                <div class="search-icon-group">
+                  <div class="search-icons">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="search-icon4"
+                    >
+                      <path
+                        d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="image"
+                src="public/quote-background.svg"
+                class="search-background"
+              />
+            </div>
+          </header>
+          <select id="search_clubs_teams_drop" class="search-select">
+            <option id="club_default_option" value="Club/Team">
+              Club/Team
+            </option>
+          </select>
+          <select id="search_school_drop" class="search-select1">
+            <option id="school_default_option" value="School">School</option>
+            <option id="ghc_option" value="Granada Hills HS">
+              Granada Hills HS
+            </option>
+          </select>
+          <select id="search_race_drop" class="search-select2">
+            <option id="race_default_option" value="Race">Race</option>
+            <option id="black_option" value="Black">Black</option>
+            <option id="white_option" value="White">White</option>
+            <option id="hispanic_option" value="Hispanic">Hispanic</option>
+            <option id="indian_option" value="Indian">Indian</option>
+            <option id="asian_option" value="Asian">Asian</option>
+            <option id="middle_eastern_option" value="Middle Eastern">
+              Middle Eastern
+            </option>
+          </select>
+          <select id="search_color_drop" class="search-select3">
+            <option id="color_default_option" value="Favorite Color">
+              Favorite Color
+            </option>
+            <option id="red_color_option" value="Red">Red</option>
+            <option id="green_color_option" value="Green">Green</option>
+            <option id="blue_color_option" value="Blue">Blue</option>
+            <option id="yellow_color_option" value="Yellow">Yellow</option>
+            <option id="orange_color_option" value="Orange">Orange</option>
+            <option id="purple_color_option" value="Purple">Purple</option>
+            <option id="pink_color_option" value="Pink">Pink</option>
+            <option id="white_color_option" value="White">White</option>
+            <option id="black_color_option" value="Black">Black</option>
+          </select>
+          <select id="search_hair_drop" class="search-select4">
+            <option id="hair_default_option" value="Hair Color">
+              Hair Color
+            </option>
+            <option id="black_hair_option" value="Black">Black</option>
+            <option id="brown_hair_option" value="Brown">Brown</option>
+            <option id="blonde_hair_option" value="Blonde">Blonde</option>
+            <option id="red_hair_option" value="Red">Red</option>
+            <option id="green_hair_option" value="Green">Green</option>
+            <option id="blue_hair_option" value="Blue">Blue</option>
+            <option id="purple_hair_option" value="Option 2">Option 2</option>
+          </select>
+          <select id="search_subject_drop" class="search-select5">
+            <option id="subject_default_option" value="Favorite Subject">
+              Favorite Subject
+            </option>
+            <option id="english_subject_option" value="English">
+              Englilsh
+            </option>
+            <option id="history_subject_option" value="History">History</option>
+            <option id="politics_subject_option" value="Politics">
+              Politics
+            </option>
+            <option id="math_subject_option" value="Math">Math</option>
+            <option id="biology_subject_option" value="Biology">Biology</option>
+            <option id="chemistry_subject_option" value="Chemistry">
+              Chemistry
+            </option>
+            <option id="physics_subject_option" value="Physics">Physics</option>
+            <option id="comp_sci_subject_option" value="Computer Science">
+              Computer Science
+            </option>
+            <option id="music_subject_option" value="Music">Music</option>
+            <option id="intl_language_subject_option" value="Foreign Language">
+              Foreign Language
+            </option>
+          </select>
+          <button
+            id="search_search_button"
+            type="button"
+            class="search-button button"
+          >
+            <span>
+              <span>Search</span>
+              <br />
+            </span>
+          </button>
+          <div class="search-list">
+            <div class="search-row">
+              <div class="speaker">
+                <div class="speaker-speaker speaker-root-class-name56">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-1-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+                <div class="speaker-speaker speaker-root-class-name57">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-2-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+              </div>
+              <div class="search-row2 speaker">
+                <div class="speaker-speaker speaker-root-class-name58">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-3-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+                <div class="speaker-speaker speaker-root-class-name59">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-4-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="search-row3">
+              <div class="search-row4 speaker">
+                <div class="speaker-speaker speaker-root-class-name60">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-4-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+                <div class="speaker-speaker speaker-root-class-name61">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-3-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+              </div>
+              <div class="search-row5 speaker">
+                <div class="speaker-speaker speaker-root-class-name62">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-1-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+                <div class="speaker-speaker speaker-root-class-name63">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-2-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="search-row6">
+              <div class="search-row7 speaker">
+                <div class="speaker-speaker speaker-root-class-name64">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-2-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+                <div class="speaker-speaker speaker-root-class-name65">
+                  <img
+                    id="speaker_profile_pic"
+                    alt="image"
+                    src="public/speakers-1-1500w.png"
+                    class="speaker-image"
+                  />
+                  <div class="speaker-container">
+                    <div class="speaker-container1">
+                      <div class="speaker-deails">
+                        <h3 id="speaker_name" class="speaker-name">
+                          <span>Samantha Johnson</span>
+                        </h3>
+                        <h3 id="speaker question" class="speaker-name1">
+                          <span>Do you like me?</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="speaker_is_liked"
+                    class="speaker-checkbox"
+                  />
+                </div>
+              </div>
+              <div class="search-row8 speaker"></div>
+            </div>
+          </div>
+          <div class="search-container2">
+            <div class="search-container3"></div>
+            <button
+              id="search_prev_button"
+              type="button"
+              class="button search-button1"
+            >
+              Prev
+            </button>
+          </div>
+          <div class="search-container4">
+            <button
+              id="search_next_button"
+              type="button"
+              class="button search-button2"
+            >
+              Next
+            </button>
+          </div>
+        </section>
+        <div>
+          <div class="search-container6">
+            <script>
+              ScrollReveal().reveal('.speaker');
+              ScrollReveal().reveal('.image-notes');
+            </script>
+          </div>
+        </div>
+        <div>
+          <div class="search-container8">
+            <style>
+              #scrollbar::-webkit-scrollbar-track
+              {
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+              	border-radius: 10px;
+              	background-color: #F5F5F5;
+              }
+
+              #scrollbar::-webkit-scrollbar
+              {
+              	height: 12px;
+              	background-color: #F5F5F5;
+              	border-radius: 10px;
+              }
+
+              #scrollbar::-webkit-scrollbar-thumb
+              {
+              	border-radius: 10px;
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+              	background-color: #555;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

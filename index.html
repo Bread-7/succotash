@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta property="og:title" content="Home" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Source Sans Pro;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <div class="home-background">
+            <img
+              alt="image"
+              src="public/circle-background.svg"
+              class="home-image"
+            />
+            <img
+              alt="image"
+              src="public/line-background.svg"
+              class="home-image1"
+            />
+          </div>
+          <header data-thq="thq-navbar" class="home-navbar">
+            <h2 id="home_title" class="home-text">Who Likes You?</h2>
+            <div
+              data-thq="thq-navbar-nav"
+              data-role="Nav"
+              class="home-desktop-menu"
+            >
+              <nav
+                data-thq="thq-navbar-nav-links"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <a href="index.html" class="home-link navLink">Home</a>
+                <a href="search.html" class="home-link1 navLink">
+                  <span>Search</span>
+                  <br />
+                </a>
+                <a href="profile.html" class="home-link2 navLink">Profile</a>
+              </nav>
+              <a href="register.html" class="home-register button">
+                <span>Register now</span>
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path
+                    d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg
+                id="home_menu_icon"
+                viewBox="0 0 1024 1024"
+                class="home-icon2"
+              >
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="home-nav1"
+              >
+                <div class="home-container1">
+                  <h2 class="home-text04">
+                    <span class="home-text05">Who Likes You?</span>
+                    <br />
+                  </h2>
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon4">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="home-nav2"
+                >
+                  <a href="index.html" class="home-navlink navLink">Home</a>
+                  <a href="search.html" class="home-navlink1 navLink">Search</a>
+                  <a href="profile.html" class="home-navlink2 navLink">
+                    Profile
+                  </a>
+                </nav>
+                <div class="home-button-container">
+                  <a href="register.html" class="home-register1 button">
+                    Register
+                  </a>
+                </div>
+                <div class="home-icon-group">
+                  <div class="home-icons">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon6"
+                    >
+                      <path
+                        d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="image"
+                src="public/quote-background.svg"
+                class="home-background1"
+              />
+            </div>
+          </header>
+          <div class="home-hero-content">
+            <h1 id="home_site_title" class="home-text07">
+              Would you like to know if someone has a crush on you?
+            </h1>
+            <span id="home_cookie_notice" class="home-text08">
+              <span class="home-text09">
+                NOTE: Cookies are required to access this site. The only cookie
+                collected is your email, which is used for auto-login on this
+                device
+              </span>
+              <br class="home-text10" />
+            </span>
+            <div class="home-container2">
+              <a
+                href="register.html"
+                id="home_signup_button"
+                class="home-register2 button-style-1 button"
+              >
+                <span id="home_signup_button_text" class="home-text11">
+                  <span>Sign Up</span>
+                  <br />
+                  <br />
+                  <span>Here</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div>
+          <div class="home-container4">
+            <script>
+              ScrollReveal().reveal('.speaker');
+              ScrollReveal().reveal('.image-notes');
+            </script>
+          </div>
+        </div>
+        <div>
+          <div class="home-container6">
+            <style>
+              #scrollbar::-webkit-scrollbar-track
+              {
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+              	border-radius: 10px;
+              	background-color: #F5F5F5;
+              }
+
+              #scrollbar::-webkit-scrollbar
+              {
+              	height: 12px;
+              	background-color: #F5F5F5;
+              	border-radius: 10px;
+              }
+
+              #scrollbar::-webkit-scrollbar-thumb
+              {
+              	border-radius: 10px;
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+              	background-color: #555;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

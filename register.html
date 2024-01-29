@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <meta property="og:title" content="Register" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Source Sans Pro;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./register.css" rel="stylesheet" />
+
+      <div class="register-container">
+        <section class="register-notes">
+          <div class="register-first">
+            <div data-aos="fade-up-right" class="register-content">
+              <header data-thq="thq-navbar" class="register-navbar">
+                <h2 id="register_heading" class="register-text">Register</h2>
+                <div
+                  data-thq="thq-navbar-nav"
+                  data-role="Nav"
+                  class="register-desktop-menu"
+                >
+                  <nav
+                    data-thq="thq-navbar-nav-links"
+                    data-role="Nav"
+                    class="register-nav"
+                  >
+                    <a href="index.html" class="register-link navLink">Home</a>
+                    <a href="register.html" class="register-link1 navLink">
+                      Register
+                    </a>
+                  </nav>
+                </div>
+                <div data-thq="thq-burger-menu" class="register-burger-menu">
+                  <svg
+                    id="register_menu_icon"
+                    viewBox="0 0 1024 1024"
+                    class="register-icon"
+                  >
+                    <path
+                      d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+                <div data-thq="thq-mobile-menu" class="register-mobile-menu">
+                  <div
+                    data-thq="thq-mobile-menu-nav"
+                    data-role="Nav"
+                    class="register-nav1"
+                  >
+                    <div class="register-container1">
+                      <h2 id="register_nav_site_title" class="register-text1">
+                        <span class="register-text2">Who Likes You?</span>
+                        <br />
+                      </h2>
+                      <div
+                        data-thq="thq-close-menu"
+                        class="register-menu-close"
+                      >
+                        <svg viewBox="0 0 1024 1024" class="register-icon2">
+                          <path
+                            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <nav
+                      data-thq="thq-mobile-menu-nav-links"
+                      data-role="Nav"
+                      class="register-nav2"
+                    >
+                      <a
+                        href="index.html"
+                        id="register_nav_home"
+                        class="register-navlink navLink"
+                      >
+                        Home
+                      </a>
+                      <a
+                        href="register.html"
+                        id="register_nav_register"
+                        class="register-navlink1 navLink"
+                      >
+                        Register
+                      </a>
+                    </nav>
+                    <div class="register-button-container">
+                      <a
+                        href="register.html"
+                        id="register_nav_register_button"
+                        class="register-register button"
+                      >
+                        Register
+                      </a>
+                    </div>
+                    <div class="register-icon-group">
+                      <div class="register-icons">
+                        <svg
+                          id="register_nav_insta_icon"
+                          viewBox="0 0 877.7142857142857 1024"
+                          class="register-icon4"
+                        >
+                          <path
+                            d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    alt="image"
+                    src="public/quote-background.svg"
+                    class="register-background"
+                  />
+                </div>
+              </header>
+              <input
+                type="text"
+                id="register_name_input"
+                placeholder="Name"
+                class="input register-textinput"
+              />
+              <input
+                type="text"
+                id="register_email_input"
+                placeholder="Email"
+                class="input register-textinput1"
+              />
+              <select id="register_sexuality_dop" class="register-select">
+                <option id="sexuality_default_option" value="Select Sexuality">
+                  Select Sexuality
+                </option>
+                <option id="gay_sexuality_option" value="Not Straight">
+                  Not Straight
+                </option>
+                <option id="straight_sexuality_option" value="Straight">
+                  Straight
+                </option>
+              </select>
+              <select id="register_school_drop" class="register-select1">
+                <option value="Option 1">Select School</option>
+                <option value="Option 1">Select School</option>
+                <option value="Option 1">Select School</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+                <option value="Option 3">Option 3</option>
+                <option value="Option 3">Option 3</option>
+              </select>
+              <span id="register_face_upload_label" class="register-text4">
+                Upload a picture of your face
+              </span>
+              <div>
+                <div class="register-container3">
+                  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+                  <canvas id="canv1"></canvas>
+                  <style>
+                    canvas {
+                        height: 175px;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                    }
+                  </style>
+                  <p>
+                    Filename:
+                    <input
+                      type="file"
+                      multiple=""
+                      accept="image/*"
+                      id="finput"
+                      onchange="upload()"
+                    />
+                  </p>
+                  <script>
+                    function upload(){
+                        var imgcanvas = document.getElementById('canv1');
+                        var fileinput = document.getElementById('finput');
+                        var image = new SimpleImage(fileinput);
+                        image.drawTo(imgcanvas);
+                    }
+                  </script>
+                </div>
+              </div>
+              <span id="register_answer_separate_label" class="register-text5">
+                Use commas to separate multiple answers. Leave blank if no
+                answer
+              </span>
+              <span id="register_clubs_teams_label" class="register-text6">
+                Club(s)/Team(s) you're in
+              </span>
+              <input
+                type="text"
+                id="register_clubs_teams_input"
+                class="input register-textinput2"
+              />
+              <span id="register_subjects_label" class="register-text7">
+                Favorite subject(s)
+              </span>
+              <input
+                type="text"
+                id="register_subjects_input"
+                class="input register-textinput3"
+              />
+              <span id="register_colors_label" class="register-text8">
+                Favorite Color(s)
+              </span>
+              <input
+                type="text"
+                id="register_colors_input"
+                class="input register-textinput4"
+              />
+            </div>
+          </div>
+          <button
+            id="register_create_acc_button"
+            type="button"
+            class="register-button button"
+          >
+            Create Account
+          </button>
+        </section>
+        <div>
+          <div class="register-container5">
+            <script>
+              ScrollReveal().reveal('.speaker');
+              ScrollReveal().reveal('.image-notes');
+            </script>
+          </div>
+        </div>
+        <div>
+          <div class="register-container7">
+            <style>
+              #scrollbar::-webkit-scrollbar-track
+              {
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+              	border-radius: 10px;
+              	background-color: #F5F5F5;
+              }
+
+              #scrollbar::-webkit-scrollbar
+              {
+              	height: 12px;
+              	background-color: #F5F5F5;
+              	border-radius: 10px;
+              }
+
+              #scrollbar::-webkit-scrollbar-thumb
+              {
+              	border-radius: 10px;
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+              	background-color: #555;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

@@ -10,6 +10,7 @@
   width: 100%;
   height: 962px;
   display: flex;
+  position: relative;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
   flex-direction: column;
@@ -23,6 +24,7 @@
 .register-content {
   gap: var(--dl-space-space-oneandhalfunits);
   flex: 1;
+  height: 987px;
   display: flex;
   align-items: flex-start;
   padding-top: var(--dl-space-space-oneandhalfunits);
@@ -165,6 +167,10 @@
   position: absolute;
   object-fit: cover;
 }
+.register-select {
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+}
 .register-select1 {
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
@@ -173,6 +179,9 @@
   display: contents;
 }
 .register-button {
+  left: 623px;
+  bottom: 29px;
+  position: absolute;
   border-width: 2px;
 }
 .register-container5 {

@@ -9,7 +9,9 @@
 .profile-schedule {
   gap: var(--dl-space-space-fiveunits);
   width: 100%;
+  height: 1006px;
   display: flex;
+  position: relative;
   align-items: center;
   padding-top: 120px;
   flex-direction: column;
@@ -19,10 +21,12 @@
   background-image: url("public/grainy-1500w.png");
 }
 .profile-navbar {
+  top: 63px;
+  left: 17px;
   width: 100%;
   display: flex;
   z-index: 1000;
-  position: relative;
+  position: absolute;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
   justify-content: space-between;
@@ -152,22 +156,61 @@
   position: absolute;
   object-fit: cover;
 }
+.profile-container2 {
+  top: 246px;
+  left: 143px;
+  position: absolute;
+}
 .profile-container3 {
   display: contents;
 }
+.profile-select {
+  top: 527px;
+  left: 188px;
+  position: absolute;
+}
+.profile-textinput {
+  top: 603px;
+  left: 187px;
+  position: absolute;
+}
+.profile-button {
+  top: 699px;
+  left: 229px;
+  position: absolute;
+}
 .profile-text04 {
+  top: 314px;
+  left: 818px;
   color: #ffffff;
+  position: absolute;
+  font-size: 20px;
 }
 .profile-text07 {
+  top: 412px;
+  left: 780px;
   color: #ffffff;
+  position: absolute;
+  font-size: 20px;
 }
 .profile-text08 {
+  top: 511px;
+  left: 787px;
   color: #ffffff;
+  position: absolute;
+  font-size: 20px;
 }
 .profile-text09 {
+  top: 609px;
+  left: 806px;
   color: #ffffff;
+  position: absolute;
+  font-size: 20px;
 }
 .profile-link3 {
+  top: 705px;
+  left: 812px;
+  position: absolute;
   text-decoration: none;
   background-color: #ca56df;
 }
